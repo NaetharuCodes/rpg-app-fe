@@ -93,3 +93,8 @@ body {
 .auth-button:hover {
   color: var(--accent-color);
 }
+
+#main-logo {
+  height: 48px;
+  width: 48spx;
+}

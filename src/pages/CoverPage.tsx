@@ -1,4 +1,4 @@
-import RpgCoverImage from "../assets/RPG-3.webp";
+import RpgCoverImage from "../assets/RPG-1.webp";
 
 const CoverPage = () => {
   return (

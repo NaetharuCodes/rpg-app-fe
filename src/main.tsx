@@ -9,7 +9,13 @@ const authClientId = import.meta.env.VITE_AUTHO_CLIENT_ID;
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Auth0Provider domain={authDomain} clientId={authClientId}>
+    <Auth0Provider
+      domain={authDomain}
+      clientId={authClientId}
+      authorizationParams={{
+        redirect_uri: window.location.origin,
+      }}
+    >
       <App />
     </Auth0Provider>
   </React.StrictMode>
