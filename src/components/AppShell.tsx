@@ -4,6 +4,7 @@ import { GrGallery } from "react-icons/gr";
 import LogoutButton from "./auth/LogoutButton";
 import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "./auth/LoginButton";
+import Logo from "../assets/logo-sm.png";
 
 interface AppShellProps {
   children: ReactNode;
@@ -19,7 +20,7 @@ const AppShell = ({ children }: AppShellProps) => {
   return (
     <div className="flex flex-col h-full">
       <header id="navbar" className="flex flex-between">
-        <h2>RPG-AI</h2>
+        <img id="main-logo" src={Logo} />
         {isAuthenticated ? (
           <div className="flex flex-middle">
             <ul className="flex">
@@ -36,7 +37,6 @@ const AppShell = ({ children }: AppShellProps) => {
             </ul>
             <div>
               <LogoutButton />
-              <p></p>
             </div>
           </div>
         ) : (
@@ -46,7 +46,9 @@ const AppShell = ({ children }: AppShellProps) => {
         )}
       </header>
       <div className="flex-grow">{children}</div>
-      <footer id="footer">App by James Bridge</footer>
+      <footer id="footer" className="flex flex-middle">
+        App by James Bridge
+      </footer>
     </div>
   );
 };
