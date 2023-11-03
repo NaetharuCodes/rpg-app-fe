@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "CommonJS", // Changed to CommonJS for Node.js compatibility
+    "moduleResolution": "node", // Changed to node for correct module resolution in Node.js
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, // Allows default imports from modules with no default export
+    "types": ["node"] // Include Node type definitions
+  },
+  "include": ["vite.config.ts"]
+}
