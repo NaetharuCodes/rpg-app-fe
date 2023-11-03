@@ -1,8 +1,8 @@
-#RPG App
+# RPG App
 
 This is the front end for my RPG app. The app helps players create characteres for their games.
 
-##Tech Used
+## Tech Used
 
 - Vite
 - Auth0
