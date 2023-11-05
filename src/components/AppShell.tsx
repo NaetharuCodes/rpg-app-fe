@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
-import { IoCreateSharp } from "react-icons/io5";
-import { GrGallery } from "react-icons/gr";
-import LogoutButton from "./auth/LogoutButton";
 import { useAuth0 } from "@auth0/auth0-react";
-import LoginButton from "./auth/LoginButton";
+import { ReactNode } from "react";
+import { GrGallery } from "react-icons/gr";
+import { IoCreateSharp } from "react-icons/io5";
 import Logo from "../assets/logo-sm.png";
+import LoginButton from "./auth/LoginButton";
+import LogoutButton from "./auth/LogoutButton";
 
 interface AppShellProps {
   children: ReactNode;
